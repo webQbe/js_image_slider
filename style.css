@@ -135,7 +135,21 @@ body{
     color: #333;
 }
 
+/* make responsive for small screens */
+@media(max-width: 500px){
 
+    .slide .content {
+        bottom: -300px; /* hidden */
+        left: 0;
+        width: 100%;
+    }
+
+    /* for current element */
+    .slide.current .content{
+        transform: translateY(-300px); /* 300px from bottom to up */
+    }
+
+}
 
 
 /* Background Images */
