@@ -101,17 +101,41 @@ body{
 
 /* prev & next buttons */
 
-#next{
+/* positioning */
+.buttons button#next{
     position: absolute;
     top: 50%;
     right: 15px;
 }
 
-#prev{
+.buttons button#prev{
     position: absolute;
     top: 50%;
     left: 15px;
 }
+
+
+/* styling buttons */
+.buttons button{
+
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+
+}
+
+/* button hover effect */
+.buttons button:hover{
+
+    background-color: #fff;
+    color: #333;
+}
+
+
 
 
 /* Background Images */
