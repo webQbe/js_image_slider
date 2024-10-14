@@ -64,6 +64,42 @@ body{
 
 }
 
+.slide .content{
+    position: absolute; /* absolute position within slider */
+    bottom: 70px;
+    left: -600px; /* hidden = -600px & visible = 0px */
+    opacity: 0; /* invisible */
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color:#333;
+    padding: 35px;
+}
+
+
+
+.slide .content h1{
+
+    margin-bottom: 10px;
+
+}
+
+/* style current slide content */
+.slide.current .content{
+
+    opacity: 1; /* make visible */
+    transform: translateX(600px); /* bring 600px horizontally */
+    transition: all 0.7s ease-in-out 0.3s; /* make transform happen smoothly */
+
+    /*  
+        all - transition on all properties, apply opacity on transform property
+        timing - in 0.7 seconds,
+        delay - 0.3 seconds delay after image changes to next one
+    */
+
+}
+
+
+
 /* Background Images */
 .slide:first-child{
     background: url('./images/photo1.jpg') no-repeat center center/cover;
