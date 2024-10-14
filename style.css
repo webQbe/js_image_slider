@@ -26,7 +26,10 @@ If an element has width: 100px, padding: 10px, and border: 2px:
  
 */
 
-/* The combination of margin: 0, padding: 0, and box-sizing: border-box creates a consistent starting point for styling, making layouts easier to manage and preventing unexpected spacing and sizing issues. */
+/* The combination of margin: 0, padding: 0, and  box-sizing: border-box creates 
+   a consistent starting point for styling, making layouts easier to manage and 
+   preventing unexpected spacing and sizing issues. 
+   */
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -78,9 +81,7 @@ body{
 
 
 .slide .content h1{
-
     margin-bottom: 10px;
-
 }
 
 /* style current slide content */
@@ -95,9 +96,22 @@ body{
         timing - in 0.7 seconds,
         delay - 0.3 seconds delay after image changes to next one
     */
-
 }
 
+
+/* prev & next buttons */
+
+#next{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+
+#prev{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
 
 
 /* Background Images */
