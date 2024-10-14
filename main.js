@@ -71,22 +71,35 @@ const prevSlide = () => {
 // Button Events
 
 next.addEventListener('click', e => {
-    
+
     nextSlide();
+    if(auto){
+
+        // reset interval 
+        // avoid fast slide change after manual click
+        clearInterval(slideInterval);
+
+        // Run next slide after intervalTime = 5000ms
+        slideInterval = setInterval(nextSlide, intervalTime);
+    }
 
 });
 
 prev.addEventListener('click', e => {
 
     prevSlide();
+    if(auto){
+
+        clearInterval(slideInterval);
+        slideInterval = setInterval(prevSlide, intervalTime);
+    }
 
 });
 
 // Auto Slide
 // if auto is true
 if(auto){
-
-     // Run next slide after intervalTime = 5000ms
+    
     slideInterval = setInterval(nextSlide, intervalTime);
 
 }
