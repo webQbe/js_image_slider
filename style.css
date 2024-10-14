@@ -34,3 +34,12 @@ body{
     color: #fff;
     line-height: 1.6;
 }
+
+/* style container */
+
+.slider{
+    position: relative; /* content within slider have absolute position*/
+    overflow: hidden; 
+    height: 100vh; /* fill entire screen height */
+    width: 100vw; /* fill entire screen width */
+}
