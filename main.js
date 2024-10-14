@@ -11,8 +11,11 @@ const intervalTime = 5000; // for auto slide
 let slideInterval; // to keep track of intervalTime
 
 // method for next slide
+// assign current class to next slide
 
 const nextSlide = () => {
+
+     /* In JavaScript, you can assign almost anything to a variable, including a function. */
 
     // select element with current class
     const current = document.querySelector('.current');
@@ -39,8 +42,8 @@ const nextSlide = () => {
 
 }
 
-
 // method for previous slide
+// assign current class to previous slide
 
 const prevSlide = () => {
 
@@ -64,3 +67,9 @@ const prevSlide = () => {
     setTimeout(() => current.classList.remove('current'));
 
 }
+
+// Button Events
+
+next.addEventListener('click', nextSlide);
+
+prev.addEventListener('click', prevSlide);
