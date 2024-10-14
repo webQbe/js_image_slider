@@ -1,6 +1,36 @@
 /* import font */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+/* apply to all elements */
+*{
+    box-sizing: border-box;
+    margin: 0; /* This resets the margin of all elements to 0.  */
+    padding: 0; /* This resets the padding of all elements to 0 */
+}
+
+/* box-sizing: border-box:
+
+By setting box-sizing: border-box, the total width and height of an element INCLUDES the content, padding, and border.
+
+Without this, elements would be calculated based on the content-box model, where padding and border are added OUTSIDE the defined width and height.
+
+With border-box, you avoid layout issues because the padding and border won’t increase the size of an element beyond the specified width/height.
+
+Example:
+
+If an element has width: 100px, padding: 10px, and border: 2px:
+
+    With box-sizing: border-box: The total width remains 100px (content, padding, and border are squeezed within that width).
+
+    Without border-box: The total width would be 100px (content) + 10px + 10px (padding) + 2px + 2px (border) = 124px.
+ 
+*/
+
+/* The combination of margin: 0, padding: 0, and box-sizing: border-box creates a consistent starting point for styling, making layouts easier to manage and preventing unexpected spacing and sizing issues. */
+
 body{
     font-family: 'Roboto', sans-serif;
+    background: #333; /* dark grey */
+    color: #fff;
+    line-height: 1.6;
 }
